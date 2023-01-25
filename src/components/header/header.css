@@ -1,0 +1,145 @@
+.header {
+  background-image: url("background.jpg");
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin:  20px 0px 170px 0px;
+  
+}
+
+.headerContainer.listMode{
+  margin:  20px 0px 250px 0px;
+
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px
+  
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  
+}
+
+.headerListItem.active {
+ border: 1px solid white;
+ padding: 10px;
+ border-radius: 50px;
+}
+
+.headerDesc {
+  
+  margin: 10px 0px;
+}
+
+.headerTitle {
+  
+  margin: 30px 0px;
+}
+
+.headerBtn{
+  background-color: #ffffff;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  box-shadow: 5px 5px 20px #bdbdbd;
+  cursor: pointer;
+}
+
+.headerSearch{
+  height: 30px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px 30px;
+  position: absolute;
+  bottom: -30px;
+  box-shadow: 5px 5px 20px #dedede;
+  width: 100%;
+  max-width: 1024px;
+
+}
+
+.headerIcon{
+  color:  black;  
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:  black;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  color:  black;
+}
+
+.headerSearchText {
+  color: black;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+}
+
+.options{
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #dedede;
+
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+}
+
+.optionCounter{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #1d7ebe;
+  color: #1d7ebe;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.optionCounterButton:disabled{
+  cursor: not-allowed;
+}
